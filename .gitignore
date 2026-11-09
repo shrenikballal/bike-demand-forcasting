@@ -1,0 +1,100 @@
+
+# ==============================
+# Python
+# ==============================
+
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Python packaging
+build/
+dist/
+*.egg-info/
+
+# ==============================
+# Jupyter Notebook
+# ==============================
+
+.ipynb_checkpoints/
+
+# ==============================
+# Testing and Coverage
+# ==============================
+
+.pytest_cache/
+.coverage
+htmlcov/
+
+# ==============================
+# IDE and Editors
+# ==============================
+
+.vscode/
+.idea/
+
+# ==============================
+# Operating System
+# ==============================
+
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# ==============================
+# Environment and Secrets
+# ==============================
+
+.env
+.env.*
+!.env.example
+
+# ==============================
+# Logs
+# ==============================
+
+*.log
+logs/
+
+# ==============================
+# MLflow
+# ==============================
+
+mlruns/
+experiments/mlruns/
+
+# ==============================
+# Temporary Files
+# ==============================
+
+*.tmp
+*.bak
+*.swp
+
+# ==============================
+# Project-specific generated files
+# ==============================
+
+# Keep raw and processed datasets under version control
+# unless they are too large or have licensing restrictions.
+
+# Keep trained models and evaluation reports for now.
+# Review model artifact size before committing.
+# Pytest
+.pytest_cache/
+
+# MLflow database
+mlruns.db
+
+# Streamlit secrets
+.streamlit/secrets.toml
+
+# Coverage
+.coverage
+htmlcov/

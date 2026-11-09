@@ -1,0 +1,8 @@
+Experiment,Model,Features,CV Method,MAE,RMSE,MAPE_pct,R2,Fit Time (s),Notes
+3,Linear Regression,All Engineered,None,797.5109592580015,1120.6967087612422,238.02801801820422,0.6591273990232981,0.0911114999325946,ML Linear
+6,HistGradientBoosting (Tuned),All Engineered,TimeSeriesSplit(5),845.0690956532437,1090.5889099629046,184.67020177403174,0.6771966332676267,17.154270299943164,"{'min_samples_leaf': 10, 'max_leaf_nodes': 7, 'max_iter': 200, 'learning_rate': 0.1, 'l2_regularization': 0.1}"
+5,HistGradientBoosting (Default),All Engineered,None,856.2270212797522,1178.935975782955,221.97603623180305,0.6227785825644573,0.31971700000576675,Boosting
+7,Random Forest (Tuned),All Engineered,TimeSeriesSplit(5),908.6713411442623,1235.8286985248874,237.267497756119,0.5854924418829488,20.827273899922147,"{'n_estimators': 300, 'min_samples_split': 5, 'min_samples_leaf': 2, 'max_features': 1.0, 'max_depth': None}"
+4,Random Forest (Default),All Engineered,None,915.0747826086955,1223.532859886378,220.7644802456693,0.5936996687217557,0.23578420002013445,Non-linear Tree
+1,Naive (t-1),Lag 1 only,None,951.7391304347826,1380.1658217954007,243.79680592928855,0.4830144098634822,0.0,Baseline
+2,Seasonal Naive (t-7),Lag 7 only,None,1457.5869565217392,2047.1676350721639,402.97458315263367,-0.13742485766929713,0.0,Baseline
